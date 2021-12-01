@@ -27,7 +27,7 @@ setup(
     python_requires='>=3.7',
     description="Fork of awslabs/amazon-neptune-tools for internal distribution",
     include_package_data=True,
-    name='neptune-python-utils',
+    name='neptune_python_utils',
     packages=find_packages("neptune_python_utils"),
     install_requires=required_packages,
     extras_require=extras,
