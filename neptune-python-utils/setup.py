@@ -29,6 +29,7 @@ setup(
     include_package_data=True,
     name='neptune_python_utils',
     packages=find_packages("neptune_python_utils"),
+    package_dir={"proj": "neptune_python_utils"},
     install_requires=required_packages,
     extras_require=extras,
 )
