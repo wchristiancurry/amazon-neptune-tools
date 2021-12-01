@@ -1,0 +1,6 @@
+gremlinpython==3.5.1
+requests
+backoff
+cchardet
+aiodns
+idna-ssl
