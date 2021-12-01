@@ -4,3 +4,8 @@ backoff
 cchardet
 aiodns
 idna-ssl
+boto3
+botocore
+aiohttp
+ipywidgets
+ipython

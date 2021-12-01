@@ -1,3 +1,18 @@
+# Fork Information (WIP)
+ - A fork of this [repository](https://github.com/awslabs/amazon-neptune-tools) (awslabs/amazon-neptune-tools)
+ - Primarily focused on making amazon-neptune-tools/neptune-python-utils installable for our purposes
+   - Added requirements.txt and setup.py to ensure that dependencies are known and installable, so that 
+     we can easily include and test with neptune-python-utils in other projects
+
+### Restrictions
+ - glue_gremlin_csv_transforms will not work if imported - missing awsglue and pyspark dependencies
+    
+   - pyspark would be simple to add, but it's only needed where awsglue is needed
+   - awsglue is like neptune-python-utils. AWS only intends for it to be used in an AWS environment
+     making local development difficult. It's possible to have a local version of it, and they do 
+     exist in forks, but the one I saw seemed to be out of date. Either way, it's not important to us (yet)
+     
+
 # neptune-python-utils
 
 _neptune-python-utils_ is a Python 3 library that simplifies using [Gremlin-Python](https://pypi.org/project/gremlinpython/) to connect to Amazon Neptune. The library makes it easy to configure your driver to support [IAM DB Authentication](https://docs.aws.amazon.com/neptune/latest/userguide/iam-auth.html), create sessioned interactions with Neptune, and write data to Amazon Neptune from AWS Glue jobs.
