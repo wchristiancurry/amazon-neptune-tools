@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 # minimal required packages for installation
 required_packages = [
-    "gremlinpython==3.5.1",
+    "gremlinpython==3.4.11",
     "requests",
     "backoff",
     "cchardet",
