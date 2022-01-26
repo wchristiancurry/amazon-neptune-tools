@@ -8,7 +8,7 @@ required_packages = [
     "cchardet==3.0.4",
     "aiodns",
     "idna-ssl",
-    "boto3~-1.18.51",
+    "boto3~=1.18.51",
     "botocore~=1.21.51",
     "aiohttp",
     "pyparsing==2.4.7",
