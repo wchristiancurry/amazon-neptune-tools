@@ -3,14 +3,16 @@ from setuptools import setup, find_packages
 # minimal required packages for installation
 required_packages = [
     "gremlinpython==3.4.11",
-    "requests",
+    "requests==2.23.0",
     "backoff",
-    "cchardet",
+    "cchardet==3.0.4",
     "aiodns",
     "idna-ssl",
-    "boto3",
-    "botocore",
+    "boto3~-1.18.51",
+    "botocore~=1.21.51",
     "aiohttp",
+    "pyparsing==2.4.7",
+    "typing-extensions"
 ]
 
 # Specific use case dependencies
